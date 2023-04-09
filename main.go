@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
+	"github.com/huantt/mac-keeper/cmd"
 	"github.com/spf13/cobra"
-	"mac-keeper/cmd"
 )
 
 func main() {

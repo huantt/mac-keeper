@@ -1,4 +1,4 @@
-module mac-keeper
+module github.com/huantt/mac-keeper
 
 go 1.18
 

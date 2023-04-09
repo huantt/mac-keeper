@@ -2,9 +2,9 @@ package cmd
 
 import (
 	"fmt"
+	"github.com/huantt/mac-keeper/impl/alerter"
+	"github.com/huantt/mac-keeper/monitor"
 	"github.com/spf13/cobra"
-	"mac-keeper/impl/alerter"
-	"mac-keeper/monitor"
 )
 
 const defaultSOSSound = "data/sos_sound.mp3"

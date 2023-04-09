@@ -2,8 +2,8 @@ package monitor
 
 import (
 	"fmt"
+	"github.com/huantt/mac-keeper/pkg/macos"
 	_ "github.com/spf13/cobra"
-	"mac-keeper/pkg/macos"
 	"sync"
 	"time"
 )
