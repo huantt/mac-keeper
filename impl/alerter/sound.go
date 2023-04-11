@@ -13,6 +13,6 @@ func NewSoundPlayer(soundPath string) *SoundPlayer {
 }
 
 func (p *SoundPlayer) Alert(message string) error {
-	cmd := exec.Command("bash", "-c", "afplay data/sos_sound.mp3")
+	cmd := exec.Command("bash", "-c", "afplay", p.soundPath)
 	return cmd.Run()
 }

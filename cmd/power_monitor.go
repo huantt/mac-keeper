@@ -18,6 +18,7 @@ func MonitorPowerCommand() *cobra.Command {
 		Use: "monitor-power",
 		Run: func(cmd *cobra.Command, args []string) {
 			powerMonitor := monitor.NewPowerMonitor()
+			fmt.Println(fmt.Sprintf("Using sos sound: %s", sosSound))
 			soundPlayer := alerter.NewSoundPlayer(sosSound)
 			if slackWebhookURL != "" && slackChannel != "" {
 				fmt.Println(fmt.Sprintf("Added Slack alerting channel: %s", slackChannel))
